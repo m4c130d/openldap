@@ -1,0 +1,177 @@
+############################
+# Création des OU	   #
+############################
+
+
+##### OU Service Achat #####
+dn: ou=achat,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: achat
+description: service achat
+
+##### OU Service Vente #####
+dn: ou=vente,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: vente
+description: service vente
+
+##### OU Service Production #####
+dn: ou=production,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: production
+description: service production
+
+##### OU Service Informatique #####
+dn: ou=informatique,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: informatique
+description: service informatique
+
+#############################
+# CREATION DES UTILISATEURS #
+#############################
+
+###### OU ACHAT #########
+
+dn: cn=achat1,ou=achat,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: achat1
+sn: achat1
+cn: achat1
+uid: achat1
+userPassword: achat1
+
+dn: cn=achat2,ou=achat,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: achat2
+sn: achat2
+cn: achat2
+uid: achat2
+userPassword: achat2
+
+###### OU VENTE ######
+
+dn: cn=vente1,ou=vente,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: vente1
+sn: vente1
+cn: vente1
+uid: vente1
+userPassword: vente1
+
+dn: cn=vente2,ou=vente,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: vente2
+sn: vente2
+cn: vente2
+uid: vente2
+userPassword: vente2
+
+dn: cn=vente3,ou=vente,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: vente3
+sn: vente3
+cn: vente3
+uid: vente3
+userPassword: vente3
+
+##### OU PRODUCTION #####
+
+dn: cn=production1,ou=production,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: production1
+sn: production1
+cn: production1
+uid: production1
+userPassword: production1
+
+dn: cn=production2,ou=production,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: production2
+sn: production2
+cn: production2
+uid: production2
+userPassword: production2
+
+dn: cn=production3,ou=production,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: production3
+sn: production3
+cn: production3
+uid: production3
+userPassword: production3
+
+dn: cn=production4,ou=production,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: production4
+sn: production4
+cn: production4
+uid: production4
+userPassword: production4
+
+dn: cn=production5,ou=production,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: production5
+sn: production5
+cn: production5
+uid: production5
+userPassword: production5
+
+##### OU INFORMATIQUE #####
+
+dn: cn=informatique1,ou=informatique,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: informatique1
+sn: informatique1
+cn: informatique1
+uid: informatique1
+userPassword: informatique1
+
+dn: cn=informatique1,ou=informatique,dc=ynova,dc=com
+objectClass: inetOrgPerson
+givenName: informatique2
+sn: informatique2
+cn: informatique2
+uid: informatique2
+userPassword: informatique2
+
+
+##############################
+ CREATION DES OU ORDINATEURS #
+##############################
+
+dn: ou=computer,ou=achat,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: computer
+description: Ordinateurs du service informatique
+
+dn: ou=computer,ou=vente,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: computer
+description: Ordinateurs du service informatique
+
+dn: ou=computer,ou=production,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: computer
+description: Ordinateurs du service informatique
+
+dn: ou=computer,ou=informatique,dc=ynova,dc=com
+objectclass: organizationalUnit
+ou: computer
+description: Ordinateurs du service informatique
+
+#################################
+CREATION DES OBJETS ORDINATEURS #
+#################################
+
+##### ACHAT ###################
+
+dn: ou=computer,ou=informatique,dc=ynova,dc=com
+objectclass: 
+ou: computer
+description: Ordinateurs du service informatique
+
+dn: ou=computer,ou=informatique,dc=ynova,dc=com
+objectclass: 
+ou: computer
+description: Ordinateurs du service informatique
